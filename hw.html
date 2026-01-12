@@ -7,13 +7,13 @@
         <p id="result"></p>
         <script>
             function fmin() {
-                var i, max = 0;
+                var i, min = 0;
                 for (i = 0; i > arguments.length; i++) {
                     if (arguments[i] < min) {
                         min = arguments[i];
                     }
                 }
-                return max
+                return min
             }
             document.getElementById("result").innerHTML = fmin(1, 3, 8, 5, 102, 63, -200);
         </script>
